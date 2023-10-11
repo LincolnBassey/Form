@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/349cfe7647.js" crossorigin="anonymous"></script>
+</head>
+<style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@100;400;700&display=swap');
+body{
+  /* font-family: 'Montserrat', sans-serif; */
+font-family: 'Roboto';
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-size: 1.1rem; */
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+  background: #0041ff;
+  background: #ff0000;
+/* background: linear-gradient(216deg,#ff0000 0%, #040604 100%); */
+  background: linear-gradient(78deg,#0041ff 20%, #00f8ff 80%);
+  display: flex;
+  }
+form{
+  background: rgb(255, 255, 255);
+  /* background: linear-gradient(78deg,#0041ff 20%, #00f8ff 80%); */
+  width: 72%;
+  height: 85%;
+  margin: 60px 40px 0 0 ;
+  padding: 0 20px 10px 100px ;
+  border-radius: 20em / 80em;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  
+}
+ul{
+  gap: 37px;
+  margin: 2em 0 3em 56em;
+  background:  rgb(1, 71, 163);
+height: 47px;
+width: 350px;
+border-radius: 50px;
+padding: 5px 4px;
+
+}
+li{
+padding: 3px 25px 5px 30px;
+background: white;
+font-size: 25px;
+color:  rgb(200, 251, 255);
+}
+.wlcmpage{
+  width: 25%;
+  text-align: center;
+  font-size: 1.5em;
+}
+.loginpage{
+  margin: 8em 5em;
+}
+p{
+  width: 300px;
+  margin:40px 0;
+  line-height: 40px;
+}
+.fa-solid{
+  color: aliceblue;
+}
+.col{
+  display: flex;
+}
+input,select{
+  display: block;
+  width: 550px;
+  height: 60px;
+  font-size: 1rem;
+  margin: 20px
+}
+#register{
+  width: 250px;
+  border-radius: 50px;
+  font-size: 1.5em;
+  margin-left:38em ;
+  border: none;
+  background: rgb(1, 71, 163);
+  color: rgb(200, 251, 255);
+  font-weight: bold;
+}
+::placeholder, select {
+  padding-left: 20px;
+}
+
+/* @media screen {max-width: 790px;
+  min-width: 1120px;
+  background-color: :read-only;
+  h2 */
+  
+/* } */
+
+</style>
+<body>
+  <section>
+    <div class="wlcmpage">
+      <div class="loginpage" style="color: white;">
+
+        <i class="fa-solid fa-rocket fa-2xl"></i>
+        <h1>Welcome</h1>
+        <p>You are 30 seconds away from earning your own money!</p>
+        <button style="font-size: 1em; font-weight: bold; width: 200px; height: 50px;border-radius: 50px; border: none;margin-top: 200px;">Login</button>
+
+      </div>
+
+    </div>
+
+    <form action="">
+      <ul style="list-style-type: none; display: flex;">
+        <a href="" style="text-decoration: none;"> <li style="color:  rgb(1, 71, 163);border-radius: 50px;
+          ">Employee</li></a>
+        <a href="" style="text-decoration: none;"> <li style=" color:  rgb(200, 251, 255); background:  rgb(1, 71, 163);;"> Hirer</li></a>
+      </ul>
+
+      <h2 style="margin: 0 10em 30px; font-size: 2.5em;">Apply as a Employee</h2>
+      <div class="col">
+        
+        <div class="leftcol">
+          <input type="text" placeholder="First Name*">
+          <input type="text" placeholder="Last Name*">
+          <input type="password" placeholder="Password*">
+          <input type="password" placeholder="Confirm Password*">
+        </div>
+          
+        <div class="Rightcol">
+          <input type="email" placeholder="Your Email*">
+          <input type="tel" placeholder="Your Phone*">
+          <select name="question" id="qtn">
+            <option value="" selected hidden> Please Enter Your Security Question</option>
+            <option value=""> What is your Nickname</option>
+            <option value=""> Where do you live</option>
+            <option value=""> what is your favourite food</option>
+            
+          <input type="text" placeholder="Enter Your Answer*">
+          </select>
+            
+     </div>
+        
+      
+      </div>
+
+      <div class="gender">
+        <input type="radio" value="Male" style="display: inline; height: 20px; width: 20px;">   
+        <label for="male" style="font-size: 1.5em;"> Male</label>
+        <input type="radio" value="Male" style="display: inline; width: 20px; height: 20px;">   
+        <label for="female" style="font-size: 1.5em;">Female</label>
+      </div>
+
+      <input type="button" name="" id="register" value="Register">
+
+    </form>
+  </section>
+</body>
+</html>
